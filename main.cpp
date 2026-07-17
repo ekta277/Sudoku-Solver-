@@ -7,9 +7,9 @@ int grid[9][9];
 bool isSafe(int row, int col, int num)
 {
   //Check row
-  int i=0; i<9; i++)
-  if(grid[row][i] == num)
-    return false;
+ for(int i=0; i<9; i++)
+   if(grid[row][i] == num)
+     return false;
 
   //Check column
   for(int i=0; i<9; i++)
@@ -65,7 +65,7 @@ void printGrid()
 
 int main()
 {
-  cout << "Enter Sudoku (use 0 for empty cells):\n;
+  cout << "Enter Sudoku (use 0 for empty cells):\n";
 
   for(int i=0; i<9; i++)
     for(int j=0; j<9; j++)
